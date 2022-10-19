@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //*Alert Section*//
+
+        alert("Error! Please enter a valid password");
+        alert("Welcome to JS land\nHappy Coding!");
+        alert("Welcome to  JS land...");
+        alert("Happy Coding!");
+        alert("hello. i can rus JS through my web browser's console");
+
+        //*Variable for strings*//
+
+        var username = "aa";
+        myName = ("Daniyal Hassan");
+        alert(myName);
+
+        var message = ("Hello World");
+
+        alert(message);
+
+        var studentName = ("Jhone Doe");
+        var studentAge = ("15 years old");
+        var studentEdu = ("Certified Mobile Application Development");
+
+        alert(studentName);
+        alert(studentAge);
+        alert(studentEdu);
+
+        var pizza = "PIZZA\nPIZA\nPIZ\nPI\nP";
+        alert(pizza);
+        var email = ("daniyal.hassan3124@gmail.com");
+        alert(email);
+        var book = ("i am trying to learn from the book");
+        alert(book + " a smarter way to learn javascript");
+        document.write("Yah! I can write HTML content through JavaScript.\n");
+        document.write("<br>")
+        var symbol = ("▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬");
+        alert(symbol);
+
+        /*Variable for Numbers*/
+        var age = ("i am 15 years old");
+        alert(age);
+        var vistior = ("you have visited this site 14 times");
+        alert(vistior);
+        var birthYear = ("My birth year is 1999");
+        document.write(birthYear);
+        document.write("<br>");
+        document.write("Data type of my declared variable is number");
+        document.write("<br>");
+        document.write("<br>");
+        var visitorsName = ("Jhone Doe ordered ");
+        var productTitle = (" on XYZ Clothing");
+        var quantity = (" 5 T-shirts(s)");
+        document.write(visitorsName, quantity, productTitle);
+        document.write("<br>");
+        /*declare variable legal and illegal*/
+        /*var hi = ("1")
+        /*var hiHello = ("2")*/
+        /*var hi1st = ("3")*/
+        /*var hi$ = ("4")*/
+        /*var hi_ = ("5")*/
+
+        /*var hi hi = ("6")*/
+        /*var 1hi = ("7")*/
+        /*var @hi=("8")*/
+        /*var hi = ("9")*/
+        /*var Hihi = ("10")*/
+
+        /*Math Expression*/
+        var a = 3;
+        var b = 5;
+        var c = a + b;
+        document.write("<br>");
+        document.write("Sum of 3 and 5 is " + c);
+
+        var q = 5;
+        var w = 3;
+        var e = q - w;
+        document.write("<br>");
+        document.write("Sub of 5 and 3 is " + e);
+
+        var r = 3;
+        var t = 5;
+        var y = a * b;
+        document.write("<br>");
+        document.write("Multiply of 3 and 5 is " + y);
+
+        var u = 3;
+        var i = 5;
+        var o = a / b;
+        document.write("<br>");
+        document.write("division of 3 and 5 is " + o);
+
+        var g = 3;
+        var h = 5;
+        var i = h % g;
+        document.write("<br>");
+        document.write("modulus of 5 and 3 is " + i);
+        document.write("<br>");
+
+
+        var l = 11;
+        document.write("value after variable declaration is " + l);
+        document.write("<br>");
+
+        var k = 5;
+        document.write("intialize the variable " + k);
+        document.write("<br>");
+
+        var m = 5;
+        var n = ++m
+        document.write("incerment the variable " + n);
+        document.write("<br>");
+        var aa = 7;
+        var ab = 6;
+        var al = aa + ab;
+        document.write("value after addition is " + al);
+        document.write("<br>");
+
+        var ac = 13;
+        ac--;
+        document.write("value after decrement is " + ac);
+        document.write("<br>");
+
+        var ae = 3 % 3;
+        document.write("The remainder is " + ae);
+        document.write("<br>");
+
+        var af = 600;
+        var ag = 5;
+        document.write("Total cost to buy 5 tickets to a movies is " + af * ag);
+        document.write("<br>");
+        document.write("<br>");
+
+        var tables = prompt("Write table number: ")
+
+        for (let ib = 1; ib <= 10; ib++) {
+
+            document.write(tables + " X " + ib + " = " + tables * ib);
+            document.write("<br>");
+            document.write("<br>");
+
+        }
+
+        var tempc = (81 - 32) * 5 / 9;
+        var tempf = (27 * 9 / 5) + 32;
+        document.write(tempc + "C° is equal to F° " + tempf)
+        document.write("<br>");
+        document.write(tempf + "F° is equal to C° " + tempc)
+        document.write("<br>");
+        document.write("<br>");
+
+        document.write("<h1>Shopping Cart</h1>");
+        document.write("<br>");
+
+        var priceofItem1 = 650;
+        document.write("Price of item 1 is " + priceofItem1);
+        document.write("<br>");
+        var quantityOfItem1 = 4;
+        document.write("Quantity of item 1 is " + quantityOfItem1);
+        document.write("<br>");
+        var priceofItem2 = 150;
+        document.write("Price of item 2 is " + priceofItem2);
+        document.write("<br>");
+        var quantityOfItem2 = 5;
+        document.write("Quantity of item 2 is " + quantityOfItem2);
+        document.write("<br>");
+        var shippingCharges = 120;
+        document.write("Shipping Charges is " + shippingCharges);
+        document.write("<br>");
+        document.write("<br>");
+        document.write(+priceofItem1 + priceofItem2 + shippingCharges + " Total Cost of the Order");
+        document.write("<br>");
+
+        document.write("<h1>Marks Sheet</h1>");
+        document.write("<br>");
+
+        var tMarks = 950;
+        document.write("Total Marks is " + tMarks);
+        document.write("<br>");
+        var oMarks = 790;
+        document.write("Obtained Marks is " + oMarks);
+        document.write("<br>");
+        var tPercent = oMarks / tMarks * 100;
+        document.write("Percentage is " + tPercent);
+        document.write("<br>");
+
+        document.write("<h1>Currency in PKR</h1>");
+        document.write("<br>");
+
+
+        var dollarC = 10 * 104.80;
+        var saudiC = 10 * 28;
+
+        document.write("10 Us Dollar converted into PKR is: " + dollarC);
+        document.write("<br>");
+        document.write("10 saudi Riyal converted into PKR is: " + saudiC);
+        document.write("<br>");
+        document.write("<br>");
+
+
+        var programI = +5 * 10 / 2;
+        document.write("Arithmetic sequence: " + programI);
+        document.write("<br>");
+
+
+        document.write("<h1>Age Calculator</h1>");
+        document.write("<br>");
+
+        var currentY = 2022;
+        document.write("Current year is " + currentY);
+        document.write("<br>");
+        var birthY = 1996;
+        document.write("Birth year is " + birthY);
+        document.write("<br>");
+        var yourAge = (currentY - birthY)
+        document.write("your age is " + yourAge);
+        document.write("<br>");
+        document.write("<br>");
+
+
+        document.write("<h1>The lifetime supply calculator</h1>");
+        document.write("<br>");
+
+        var favSnack = ("Chocloate");
+        document.write("Favourite snacks:" + favSnack);
+        document.write("<br>");
+        var cAge = ("18");
+        document.write("Current Age: " + cAge);
+        var estMaxAge = ("50");
+        document.write("<br>");
+        document.write("Estimated Maximum Age: " + estMaxAge);
+        var amtSnkPerDay = ("4");
+        document.write("<br>");
+        document.write("Amount of snacks per day:" + amtSnkPerDay);
+        var supplyFav = (11688 / amtSnkPerDay);
+        document.write("<br>");
+        document.write("from 18 years to 50 years " + supplyFav + " choclate to last you until the ripe of age 50")
+        document.write("<br>");
+        document.write("<h1>The Geometrizer</h1>")
+        document.write("<br>");
+        var geo = (2 * 3.142 * 20);
+        document.write("the radius is 20 ");
+        document.write("<br>");
+        var rad = (20);
+        document.write("the circumference is " + geo);
+        document.write("<br>");
+        var area = (3.14 * rad * rad);
+        document.write("the area is " + area);
+        document.write("<br>");
+
+        /*Chapter 1-5 completed*/
+
+
+    </script>
+</body>
+
+</html>

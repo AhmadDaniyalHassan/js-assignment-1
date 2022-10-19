@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <script>
+
+        var a = prompt("Enter City Name");
+        if (a === "karachi") {
+            alert("Welcome to city of lights!");
+        }
+        else if (a === "islamabad") {
+            alert("welcome to federal")
+        }
+        else {
+            alert("Wrong answer");
+        }
+
+        var b = prompt("Gender");
+        if (b === "male") {
+            alert("Welcome to site sir!");
+        }
+        else if (b === "female") {
+            alert("Welcome to site Ma'am!");
+        }
+        var color = prompt("Traffic Lights Indicator")
+        if (color === "Red") {
+            document.write("<span style=\"background-color:red;color:white;font-size: 2em; font-family:arial, helvetica, sans-serif;\">Red &nbsp;&nbsp;&nbsp; Please Stop</span>")
+        }
+        else if (color === "Yellow") {
+            document.write("<span style=\"background-color:yellow;color:white;font-size: 2em; font-family:arial, helvetica, sans-serif;\">Yellow &nbsp;&nbsp;&nbsp; Be ready To Move</span>")
+        }
+        else if (color === "Green") {
+            document.write("<span style=\"background-color:green;color:white;font-size: 2em; font-family:arial, helvetica, sans-serif;\">Green &nbsp;&nbsp;&nbsp; Move On</span>")
+        }
+
+
+        let x, y, z;
+
+        x = parseFloat(prompt("Enter The Value"));
+        z = prompt("Enter Operators. + - / * %");
+        y = parseFloat(prompt("Enter The Value"));
+
+        if (z == '+') {
+            result = x + y;
+        }
+        else if (z == '-') {
+            result = x - y;
+        }
+        else if (z == '/') {
+            result = x / y;
+        }
+        else if (z == '*') {
+            result = x * y;
+        }
+        else z == '%'; {
+            result = x % y;
+        }
+
+        alert(x + z + y + "=" + result);
+
+
+        var answer = 5;
+        var guess = prompt("What's your guess?");
+
+
+        for (i = 0; i <= 1; i++) {
+            if (answer == guess) {
+                alert("Bingo! your guess correct");
+
+            }
+
+            else {
+                guess = prompt("Please try again");
+
+            }
+        }
+
+        var numbers = prompt("Enter a number to find odd or even.")
+        var res = (numbers % 2 == 0) ? " even " : " odd "; {
+            res(alert("The Number is" + res))
+        }
+
+
+        var temp = prompt("enter the temperature");
+
+        if (temp < 0) {
+            alert("temperature is freezing")
+        }
+        else if (temp < 10) {
+            alert("temperature is cold")
+        }
+        else if (temp < 20) {
+            alert("temperature is good")
+        }
+        else if (temp < 30) {
+            alert("temperature is mild")
+        }
+        else if (temp < 40) {
+            alert("temperature is hot")
+        }
+        else if (temp > 40) {
+            alert("temperature is very hot")
+        }
+
+
+
+
+
+        var divisible = prompt("Check the given number is divisible by 3 or not.")
+        if (divisible % 3 == 0) {
+            alert("Right Answer")
+        }
+        else {
+            alert("Wrong Answer")
+        }
+
+        let sym = "\u0025"
+
+        var mObtained = prompt("Obtained Marks")
+        var tMarks = prompt("Total Marks")
+        var result = mObtained / tMarks * 100
+        var grade
+        var remarks
+
+        if (result > 80) {
+            grade = "A-One"
+        }
+        else if (result > 70) {
+            grade = "A"
+        }
+        else if (result > 60) {
+            grade = "B"
+        }
+        else if (result > 50) {
+            grade = "Fail"
+        }
+        if (result > 80) {
+            remarks = "Excellent"
+        }
+        else if (result > 70) {
+            remarks = "Good"
+        }
+        else if (result > 60) {
+            remarks = "You need to improve"
+        }
+        else result > 50; {
+            remarks = "Sorry"
+        }
+
+
+        document.write("<h1>Total Marks</h1>")
+        document.write("Marks Obtained: " + mObtained)
+        document.write("<br>")
+        document.write("Total Marks: " + tMarks)
+        document.write("<br>")
+        document.write("Percentage: " + result + sym)
+        document.write("<br>")
+        document.write("Grade: " + grade)
+        document.write("<br>")
+        document.write("Remarks: " + remarks)
+        document.write("<br>")
+
+
+        var petrol = prompt("remaining fuel checker")
+        if (petrol < 0.25) {
+            alert("Please refill the fuel")
+        }
+        else {
+            alert("Fuel is enough")
+        }
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

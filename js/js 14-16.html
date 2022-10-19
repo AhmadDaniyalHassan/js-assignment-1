@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #mobile {
+        cursor: pointer;
+        font-size: large;
+    }
+
+    .dd {
+        display: flex;
+        justify-content: center;
+        height: 30px;
+    }
+
+    .btn {
+        cursor: pointer;
+        background-color: black;
+        color: white;
+        font-size: large;
+        border-radius: 0px 05px 05px 0px;
+    }
+
+    .form {
+        border-radius: 05px 0px 0px 05px;
+    }
+</style>
+
+<body>
+
+    <h2 style="text-align:center ;">Array Elements In DropwDown List</h2>
+    <div class="dd"><select style="width:350px ;" class="form" name="" id="mobile"></select>
+        <button class="btn">Submit</button>
+    </div>
+
+
+
+    <br></br>
+
+
+    <script>
+
+        var option = "";
+        var mobile = ["Nokia", "Iphone", "Blackberry", "Sony", "Motorola", "Haier"]
+        for (var i = 0; i < mobile.length; i++) {
+            option += "<option value=" + mobile[i] + '">' + mobile[i] + "</option>"
+        }
+        document.getElementById('mobile').innerHTML = option
+
+
+        var emptyLit = {}
+        var emptyObj = []
+        var string = ["dog", "frog", "cat"]
+        var number = [1, 3, 4, 5]
+        var boolean = [true, true, false, true, false, false]
+        var mixedArray = [1, "fox", "bird", 31, "Mark", 42, true]
+        document.write("<br>")
+        document.write("<h3>Qualification: </h3>")
+        document.write("<br>")
+        var student = ["1) SSC " + "<br>" + "2) HSC " + "<br>" + "3) BCS " + "<br>" + "4) BS " + "<br>" + "5) BCOM " + "<br>" + "6) MS " + "<br>" + "7) M.Phil. " + "<br>" + "8) PhD" + "<br>"]
+        document.write(student)
+        document.write("<br>")
+
+        document.write("<h3>Students result</h3>")
+
+        var stuName = ["Mark", "Max", "Chloe"]
+        stuScore = [350, 400, 280]
+        stuPer = [70, 80, 56]
+        document.write("Score of " + stuName[0] + " is " + stuScore[0] + ". Percentage: " + stuPer[0] + "%.")
+        document.write("<br>")
+        document.write("Score of " + stuName[1] + " is " + stuScore[1] + ". Percentage: " + stuPer[1] + "%.")
+        document.write("<br>")
+        document.write("Score of " + stuName[2] + " is " + stuScore[2] + ". Percentage: " + stuPer[2] + "%.")
+        document.write("<br>")
+        document.write("<br>")
+
+        document.write("<h3>initilize array. unshift. push. shift. unshift. pop. added by index. splice. join</h3>")
+
+
+        var color = ["red " + "blue " + "green "]
+        document.write(color.join())
+        document.write("<br>")
+        document.write("<br>")
+
+        color.unshift("black ")
+        document.write(color.join(''))
+        document.write("<br>")
+        document.write("<br>")
+
+        color.push("yellow ")
+        document.write(color.join(''))
+        document.write("<br>")
+        document.write("<br>")
+
+
+        color.shift();
+        document.write(color.join(''))
+        document.write("<br>")
+        document.write("<br>")
+
+        color.unshift("violet " + "white ")
+        document.write(color.join(''))
+        document.write("<br>")
+        document.write("<br>")
+
+        color.pop();
+        document.write(color.join(''))
+        document.write("<br>")
+        document.write("<br>")
+
+        color[5] = "brown"
+        document.write(color.join(''))
+        document.write("<br>")
+        document.write("<br>")
+
+        color.splice(1, 3);
+        document.write(color.join(''))
+        document.write("<br>")
+        document.write("<br>")
+
+        document.write("<h3>Student Scores</h3>")
+
+        var scoreOfStudent = [320, 230, 480, 120]
+        document.write("Score Of Students: " + scoreOfStudent)
+        document.write("<br>")
+        document.write("Ordered scores of students: " + scoreOfStudent.sort())
+        document.write("<br>")
+
+        document.write("<h3>Cities list</h3>")
+
+        var cityList = ["Karachi", "Lahore ", "Islamabad ", "Quetta ", "Peshawar"]
+
+
+        var newCityList = cityList.slice(1, 4);
+        document.write("<br>")
+
+        document.write("Cities: " + cityList);
+        document.write("<br>")
+        document.write("New City list: " + newCityList);
+        document.write("<br>")
+        document.write("<br>")
+
+        document.write("<h3>Join Method</h3>")
+
+        var arr = ["This ", "is ", "my ", "cat "];
+        document.write(arr)
+        document.write("<br>")
+        document.write(arr.join(''))
+        document.write("<br>")
+        document.write("<br>")
+
+        document.write("<h3>Shift first and at last Pop method used</h3>")
+
+        var inputD = ["Keyboard ", "Mouse ", "Speaker ", "Monitor "]
+        document.write("<br>")
+        document.write("Devices: " + inputD)
+        document.write("<br>")
+        document.write("<br>")
+        document.write(inputD.shift());
+        document.write("<br>")
+        document.write(inputD.shift());
+        document.write("<br>")
+        document.write(inputD.shift());
+        document.write("<br>")
+        document.write(inputD.pop());
+        document.write("<br>")
+
+        document.write("<h3>pop first and at last shift method</h3>")
+
+        var inputD = ["Keyboard ", "Mouse ", "Speaker ", "Monitor "]
+        document.write("<br>")
+        document.write("Devices: " + inputD)
+        document.write("<br>")
+        document.write("<br>")
+        document.write(inputD.pop());
+        document.write("<br>")
+        document.write(inputD.pop());
+        document.write("<br>")
+        document.write(inputD.pop());
+        document.write("<br>")
+        document.write(inputD.shift());
+        document.write("<br>")
+
+
+
+    </script>
+
+</body>
+
+</html>
