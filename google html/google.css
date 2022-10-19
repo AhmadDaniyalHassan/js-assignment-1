@@ -1,0 +1,143 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+body {
+    background-color: #1c1c1d;
+}
+
+.bgcolor {
+    background-color: #1F2326;
+    height: 540px;
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+    text-decoration: none;
+}
+
+ul>li {
+    padding-top: 13px;
+    padding-left: 2px;
+    padding-right: 13px;
+    display: inline-block;
+}
+
+ul>li :hover{text-decoration: underline;}
+
+a {text-decoration: none;
+    color: white;
+}
+
+.bg-img1,
+.p-img {
+    padding-left: 12px;
+    cursor: pointer;
+    padding-top: 4px;
+}
+
+h2 {
+    width: 300px;
+    margin-left:320px;
+    padding-bottom: 5px;
+}
+
+.google { margin-left: 180px;
+    font-family: sans-serif;
+    font-size: 68px;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    cursor: pointer;
+    padding-bottom: 0px;
+    width: 100px;
+}
+
+.searchbar {
+    padding-left: 39px;
+    padding-right: 40px;
+    font-size: 17px;
+    color: aliceblue;
+    width: 400px;
+    height: 39px;
+    border-radius: 33px;
+    background-color: #1F2326;
+    border: 0.2px rgb(85, 85, 85) solid;
+}
+
+form {
+    text-align: center;
+}
+
+.searchbar :active {
+    box-shadow: 0px 3px 4px 5px rgb(99, 98, 98, 0.7);
+}
+
+input :active {
+    outline: none;
+}
+
+button {
+    width: 140px;
+    height: 38px;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: #414242;
+    cursor: pointer;
+}
+
+.iconsearch {
+    padding-top: 11px;
+    margin-left: 11px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.mic {
+    padding-top: 11px;
+    margin-left: 453px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.footer {
+    padding-top: 20px;
+    width: 1004px;
+    padding-bottom: 04px;
+    padding-left: 30px;
+    color: rgb(167, 166, 166);
+    font-size: 14px;
+    height: 20px 0px 20px 0px;
+    font-family: Arial, sans-serif;
+}
+
+.pak {
+    padding-top: 01px;
+}
+
+hr {
+    background-color: rgb(95, 94, 94);
+    height: 1.3px;
+    width: 1364px;
+    margin-top: 06px;
+}
+
+.last {
+    text-decoration: none;
+    padding-top: 10px;
+    padding-left: 30px;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+}
+
+.last2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.last2>a{color:rgb(167, 166, 166)}
